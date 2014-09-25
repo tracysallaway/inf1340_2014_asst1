@@ -11,8 +11,8 @@ Example:
 
 """
 
-__author__ = 'Susan Sim, Sarah-Anne Schultheis'
-__email__ = "ses@drsusansim.org, sarah.schultheis@mail.utoronto.ca"
+__author__ = 'Tracy Sallaway, Sarah-Anne Schultheis'
+__email__ = "tracy.armstrong@mail.utoronto.ca, sarah.schultheis@mail.utoronto.ca"
 
 __copyright__ = "2014 Susan Sim"
 __license__ = "MIT License"
