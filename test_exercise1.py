@@ -2,10 +2,10 @@
 
 """ Module to test exercise1.py """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
+__author__ = 'Sarah-Anne Schultheis, Tracy Sallaway'
+__email__ = "sarah.schultheis@mail.utoronto.ca, tracy.armstrong@mail.utoronto.ca"
 
-__copyright__ = "2014 Susan Sim"
+__copyright__ = "2014 Sarah-Anne Schultheis, Tracy Sallaway"
 __license__ = "MIT License"
 
 __status__ = "Prototype"

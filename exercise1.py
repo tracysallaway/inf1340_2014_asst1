@@ -14,7 +14,7 @@ Example:
 __author__ = 'Tracy Sallaway, Sarah-Anne Schultheis'
 __email__ = "tracy.armstrong@mail.utoronto.ca, sarah.schultheis@mail.utoronto.ca"
 
-__copyright__ = "2014 Susan Sim"
+__copyright__ = "2014 Sarah-Anne Schultheis, Tracy Sallaway"
 __license__ = "MIT License"
 
 __status__ = "Prototype"
