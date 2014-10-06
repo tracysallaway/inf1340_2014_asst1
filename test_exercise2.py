@@ -4,7 +4,7 @@
 import pytest
 
 __author__ = 'Tracy Sallaway, Sarah-Anne Schultheis'
-__email__ = "tracy.armstrong@mail.utoronto.ca, sarahschultheis@mail.utoronto.ca"
+__email__ = "tracy.armstrong@mail.utoronto.ca, sarah.schultheis@mail.utoronto.ca"
 
 __copyright__ = "2014 Susan Sim"
 __license__ = "MIT License"
@@ -12,8 +12,9 @@ __license__ = "MIT License"
 __status__ = "Prototype"
 
 # imports one per line
-
+import pytest
 from exercise2 import checksum
+
 
 def test_checksum():
     """
@@ -30,17 +31,15 @@ def test_checksum():
 
 
 def test_input():
-   # """
-    #Inputs that are the incorrect format and length
-    #"""
+
+    """
+    Inputs that are incorrect
+    """
     with pytest.raises(TypeError):
-       checksum(1.0)
-       checksum(786936224306)
+        checksum(1.0)
+        checksum(786936224306)
 
     with pytest.raises(ValueError):
-       checksum("1")
-       checksum("1234567890")
-
-    # other tests
-
-# add functions for any other tests
+        checksum("1")
+        checksum("1234567890")
+        checksum("UPC")

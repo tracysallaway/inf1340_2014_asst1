@@ -2,10 +2,10 @@
 
 """ Module to test exercise1.py """
 
-__author__ = 'Sarah-Anne Schultheis, Tracy Sallaway'
-__email__ = "sarah.schultheis@mail.utoronto.ca, tracy.armstrong@mail.utoronto.ca"
+__author__ = 'Tracy Sallaway, Sarah-Anne Schultheis'
+__email__ = "tracy.armstrong@mail.utoronto.ca, sarah.schultheis@mail.utoronto.ca"
 
-__copyright__ = "2014 Sarah-Anne Schultheis, Tracy Sallaway"
+__copyright__ = "2014 Susan Sim"
 __license__ = "MIT License"
 
 __status__ = "Prototype"
@@ -21,14 +21,17 @@ def test_letter_grade():
     """
     assert grade_to_gpa("A+") == 4.0
     assert grade_to_gpa("A") == 4.0
-    assert grade_to_gpa("A-") == 4.0
-    assert grade_to_gpa("B+") == 4.0
-    assert grade_to_gpa("B") == 4.0
-    assert grade_to_gpa("B-") == 4.0
-    assert grade_to_gpa("FZ") == 4.0
+    assert grade_to_gpa("A-") == 3.7
+    assert grade_to_gpa("B+") == 3.3
+    assert grade_to_gpa("B") == 3.0
+    assert grade_to_gpa("B-") == 2.7
+    assert grade_to_gpa("FZ") == 0.0
     
     with pytest.raises(ValueError):
         grade_to_gpa("q")
+        grade_to_gpa("Hello")
+        grade_to_gpa("A++")
+        grade_to_gpa(" ")
     # add more tests for invalid values
 
 
@@ -75,5 +78,4 @@ def test_float_input():
     """
     with pytest.raises(TypeError):
         grade_to_gpa(82.5)
-
-# add functions for any other tests
+        grade_to_gpa(0.0)
