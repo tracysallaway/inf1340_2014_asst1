@@ -40,27 +40,46 @@ def grade_to_gpa(grade):
         ValueError if parameter is out of range
     """
 
-    letter_grade = ""
     gpa = 0.0
 
     if type(grade) is str:
-        print ("letter") # remove this line once the code is implemented
-        # check that the grade is one of the accepted values
-        # assign grade to letter_grade
+        if grade == "A+":
+            gpa = 4.0
+        elif grade == "A":
+            gpa = 4.0
+        elif grade == "A-":
+            gpa = 3.7
+        elif grade == "B+":
+            gpa = 3.3
+        elif grade == "A-":
+            gpa = 3.7
+        elif grade == "B+":
+            gpa = 3.3
+        elif grade == "B":
+            gpa = 3.0
+        elif grade == "B-":
+            gpa = 2.7
+        elif grade == "FZ":
+            gpa = 0.0
+        else:
+            raise ValueError('Please enter a valid grade')
+        return gpa
     elif type(grade) is int:
-        print("mark") # remove this line once the code is implemented
-        # check that grade is in the accepted range
-        # convert the numeric grade to a letter grade
-        # assign the value to letter_grade
-        # hint: letter_grade = mark_to_letter(grade)
+        if grade >= 85 and grade <= 100:
+            gpa = 4.0
+        elif grade >= 80 and grade <= 84:
+            gpa = 3.7
+        elif grade >= 77 and grade <= 79:
+            gpa = 3.3
+        elif grade >= 73 and grade <= 76:
+            gpa = 3.0
+        elif grade >= 70 and grade <= 75:
+            gpa = 2.7
+        elif grade >= 0 and grade <= 69:
+            gpa = 0.0
+        else:
+            raise ValueError('Please enter a valid integer grade between 0 and 100')
+        return gpa
     else:
-        # raise a TypeError exception
-        raise TypeError("Invalid type passed as parameter")
-
-    # write a long if-statement to convert letter_grade
-    # assign the value to gpa
-    if letter_grade == "A":
-        gpa = 4.0
-
-    return gpa
+        raise TypeError('Please enter a valid letter or integer grade')
 
